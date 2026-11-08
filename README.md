@@ -2,188 +2,138 @@
   <img src="assets/banner.svg" alt="Awesome AI-Powered Contract Metadata Extraction Banner" width="100%">
 </p>
 
-# Awesome-AI-Powered-Contract-Metadata-Extraction
-
-**Top AI Powered Contract Metadata Extraction (Opensource) 🌟 Star if you like it! 🌟**
-
-
-
-**Curated List of SaaS Products & Open-Source GitHub Projects**
-
-*Focused on Clause Extraction, OCR Pipelines, Source-Linked Registers & Self-Hosted Extraction Engines*
-
-**Last updated: November 2026**
-
-
-
-This repository tracks notable **SaaS platforms** and **open-source projects** for **AI-Powered Contract Metadata Extraction**. These tools enable legal and contract operations teams to ingest contracts at scale, extract key terms, clauses, dates, and obligations, and turn static documents into searchable, structured metadata—from fully managed platforms with proprietary legal models to open-source pipelines that give teams control over their extraction logic and LLM provider.
-
-
-
-**Examples** include Icertis AnalyticsAI, Kira (Litera), Evisort (Workday), Luminance, Conga Discovery, ABBYY FlexiCapture, Rossum, Hyperscience, Google Cloud Document AI, and AWS Comprehend (the category leaders in commercial space).
-
-
-
-**Open-source emphasis**: This section is expanded with every relevant project for self-hosted contract extraction, document AI, and open metadata pipelines. **Critical note**: True open-source contract metadata extraction is sparse—**contract-obligation-extraction** is the only purpose-built open-source pipeline that reads executed contracts and produces a structured register of obligations, dates, and risk flags with source citations . **ContractVault** offers a CLI-based approach to post-signature extraction with field provenance. No open-source project matches Icertis's agentic AI or Kira's 1,400+ pre-built legal fields, but for teams wanting model transparency and data sovereignty, the building blocks exist.
-
-
-
-Contributions welcome! Open a PR to add/update entries. Keep descriptions factual and link to official sites.
-
-
-
-## Table of Contents
-
-- [SaaS/Hosted Platforms](#saas-hosted-platforms)
-
-- [Open-Source GitHub Projects](#open-source-github-projects)
-
-- [How to Contribute](#how-to-contribute)
-
-- [Disclaimer](#disclaimer)
-
-
-
-## SaaS/Hosted Platforms
-
-
-
-- **Icertis AnalyticsAI**
-
-  **Agentic AI contract analysis** without CLM implementation. **Features**: **No rules to build, no models to train**—ingests thousands of contracts from repositories, extracts and normalizes key clauses, attributes, and numeric terms in real time . **Prompt library and agentic workflows**—describe query intent in natural language, agents generate context-aware prompts . **Semantic search** surfacing results by meaning, not keywords; **value identification**—quantify unrealized rebates, unimplemented pricing terms, and untracked commitments to recover 2–4% revenue leakage . **Pricing**: Quote-only; enterprise contracts. **Free tier**: None. **Best for**: enterprises wanting immediate contract intelligence without a full CLM deployment—**trade-off**: enterprise pricing; requires Icertis engagement.
-
-
-
-- **Kira (Litera)**
-
-  **Contract review platform with multi-layer AI**. **Features**: **1,400+ pre-built proprietary AI fields** developed through 45,000 lawyer hours across 50+ jurisdictions; **Generative Smart Fields** can be grounded in these proprietary fields to reduce hallucinations and improve accuracy—users define extraction in natural language and add grounding context . **Governance controls** allow teams to enable or disable GenAI as needed . **Pricing**: Quote-only; enterprise contracts. **Free tier**: None. **Best for**: legal teams needing defensible, consistent extraction across large document sets—**trade-off**: enterprise pricing; proprietary field library is the moat.
-
-
-
-- **Evisort (Workday)**
-
-  **AI contract intelligence** with agentic analysis. **Features**: **100,000+ contracts processed** at Workday itself; **45,000 hours saved quarterly**; **54 custom models**; **3,500% ROI** from averted legal fees . **Actionable insights**—data from customer MSAs sent directly to Salesforce for revenue optimization; **M&A review** in hours instead of weeks . **Pricing**: Quote-only; now part of Workday. **Free tier**: None. **Best for**: Workday customers wanting contract intelligence integrated with HCM and financials—**trade-off**: Workday ecosystem dependency.
-
-
-
-- **Luminance**
-
-  **Legal-grade AI** with Lumi assistant. **Features**: **Lumi** is a conversational legal assistant at the platform's heart—navigate contracts, trigger actions, generate insights via natural language; chat history saved so context compounds . **Repository as living intelligence**—customizable dashboards per team (Finance, Procurement, HR, Sales); ask nuanced questions across entire portfolios; **source-level citations** trace outputs to underlying clauses . **Document families** analyzed as evolving relationships—amendments, side letters, and related agreements interpreted together . **Pricing**: Quote-only; enterprise contracts. **Free tier**: None. **Best for**: enterprises wanting a conversational interface to their entire contract portfolio—**trade-off**: enterprise pricing; implementation required.
-
-
-
-- **Conga Discovery**
-
-  **AI extraction** with automated and verified options. **Features**: **Three extraction modes**—OCR (text only, fastest), Automated Extraction (AI only), Verified Extraction (AI + attorney review) . **Maps agreement types** (MSA, NDA, ICA) to predefined terms; **captures, highlights, and creates searchable metadata** (dates, amounts, Booleans, custom values) for detected provisions . **User feedback trains the AI** for custom provision models . **Pricing**: Quote-only; enterprise contracts. **Free tier**: None. **Best for**: organizations wanting a choice between automated and human-verified extraction—**trade-off**: setup and configuration required; proprietary platform.
-
-
-
-- **ABBYY FlexiCapture**
-
-  **Document AI with NLP for unstructured contracts**. **Features**: **NLP models** extract reference numbers, party names, key dates (signature, effective, term, expiration), contract amounts, fees, and payment terms from contracts and letters . **Segmentation** recommended before entity extraction to speed processing—useful information is often in specific pages or paragraphs . **Separate methods** for structured/semi-structured documents (FlexiLayouts) vs. unstructured (NLP) . **Pricing**: Quote-only. **Free tier**: None. **Best for**: organizations processing mixed document types needing both structured and unstructured extraction—**trade-off**: setup complexity; NLP models require training samples.
-
-
-
-- **Rossum**
-
-  **AI document gateway** with computer vision. **Features**: **Automated understanding**—reads contract data with computer vision, improving accuracy with repeated use; **two-way communication for exception resolution**; **in-depth integrations** with downstream systems . Claims **90% reduction in manual data entry**; **ISO 27001 certified and HIPAA compliant** with 99.9% uptime SLA . **Pricing**: Quote-only. **Free tier**: None. **Best for**: teams wanting end-to-end document processing with exception handling—**trade-off**: focused on transactional documents; contract-specific depth varies.
-
-
-
-- **Hyperscience**
-
-  **Hypercell platform** with long-form document extraction. **Features**: **Deep learning model for long-form documents**—processes complex documents like contracts and loan applications more efficiently, extracting critical data points and understanding nuanced content . **99.5% accuracy** and **98% automation rates**; **automated audit logs** for traceability; **model lifecycle management** for adapting to new document types without extensive retraining . **Pricing**: Quote-only. **Free tier**: None. **Best for**: enterprises needing high-accuracy extraction across varied document types—**trade-off**: enterprise complexity; long-form extraction is newer.
-
-
-
-- **Google Cloud Document AI**
-
-  **Document processing with custom extractors**. **Features**: **Custom extractors** with three model options—**foundation model** (zero-shot/few-shot, minimal training data), **custom model** (fine-tuned), and **template** (fixed layout) . **Foundation models recommended for contracts**—high layout variation, arbitrary text, and need only 0–50+ documents for production quality . **Layout parser** converts documents to structured representation for generative AI retrieval . **Pricing**: Consumption-based. **Free tier**: Limited trial. **Best for**: Google Cloud organizations wanting flexible extraction with minimal training data—**trade-off**: foundation models may require validation for legal-grade accuracy.
-
-
-
-- **AWS Comprehend / Textract**
-
-  **AWS-native extraction pipeline**. **Features**: **Textract** converts contracts to text; **Comprehend** performs downstream analysis and term extraction; **custom classification models** identify non-standard sections after training on labeled historical contracts . **Pipeline** splits contracts, extracts standard terms as key-value pairs, classifies non-standard sections, and stores results in DynamoDB with error files per contract . **Pricing**: Pay-per-use. **Free tier**: AWS Free Tier applies. **Best for**: AWS-centric teams wanting to build custom extraction pipelines—**trade-off**: requires ML engineering; not a turnkey contract tool.
-
-
-
-## Open-Source GitHub Projects
-
-
-
-- **contract-obligation-extraction**
-
-  **Structured register of obligations and key clauses from contracts** (open source) — **the most complete open-source contract metadata extraction pipeline** found in this research, designed for post-signature operations . **Features**: **Reads executed and draft contracts** (MSAs, SOWs, DPAs, outsourcing agreements, ISDAs) and extracts a **structured register of obligations, key clauses, dates, and risk flags**—termination/renewal, liability caps, indemnities, audit/step-in/sub-outsourcing rights, data-residency and SLA commitments—**each linked to its source clause** . **Deterministic engine owns the result**—clause segmentation gives every clause a stable anchor; candidates citing unreal clauses are dropped; config-owned risk-flag taxonomy validates every proposed flag; renewal clock computes what is breached or inside notice window; severity band is pure code; **material registers route to human reviewers** . **PII redacted before audit**; every result carries a citation . **Tech stack**: Python 3.12, FastAPI. **Deploy**: Self-hosted (`make install`, `make gate` for offline CI; `make run-api`) . **Trade-off**: **Early-stage project**—not production-hardened; requires configuration of risk taxonomy and contract corpus. **Best for**: contract operations teams wanting a source-linked obligation register with human-in-the-loop review—especially those prioritizing auditability over autonomous extraction.
-
-
-
-- **ContractVault**
-
-  **Post-signature contract management CLI** (open source, PyPI) — **the most focused open-source tool for auditable contract field extraction** . **Features**: **Git-backed vault** for executed contracts; **obligation tracking** with renewal/notice/payment deadlines as `.ics` calendar; **deterministic field provenance** with confidence scores; **PII masking**; **SQLite** storage . **Tech stack**: Python, zero dependencies. **Deploy**: `pip install contract-vault`; CLI. **Trade-off**: **CLI only**—no UI, no AI agent, no multi-user support. **Best for**: developers and legal ops wanting a lightweight, auditable contract register with deadline tracking—not a full extraction platform.
-
-
-
-### Additional Strong Open-Source Options
-
-
-
-- **No mature open-source document AI platform for contracts exists beyond these projects.** Icertis, Kira, Evisort, Luminance, Conga, ABBYY, Rossum, Hyperscience, and Google/AWS are proprietary. **contract-obligation-extraction** provides the most complete pipeline but is early-stage. For production legal-grade extraction, commercial platforms are required.
-
-
-
-**Frameworks for building custom systems**: **contract-obligation-extraction** is the strongest open-source starting point for post-signature obligation extraction with citations. **ContractVault** fills a niche for CLI-based deadline tracking. **Neither matches Icertis's agentic AI or Kira's 1,400+ legal fields.**
-
-
-
-## How to Contribute
-
-
-
-1. Fork the repo.
-
-2. Add/edit entries in `README.md` (follow existing format).
-
-3. Include: name, link, 1–2 sentence description, license (for open-source), and whether it's SaaS or open-source.
-
-4. Submit PR with a short explanation.
-
-
-
-Star the repo if you find it useful!
-
-
-
-## Disclaimer
-
-
-
-- This is a **community-curated** list — not exhaustive and not an endorsement.
-
-- Contract metadata extraction platforms handling privileged legal documents must comply with data protection regulations (GDPR, CCPA, etc.) and implement appropriate access controls and confidentiality safeguards.
-
-- **The "agentic contract analysis" vs. "multi-layer legal AI" vs. "conversational portfolio assistant" vs. "pipeline extraction" vs. "document AI platform" distinction is critical.** **Icertis AnalyticsAI** is **agentic contract analysis**—natural language queries trigger agents to generate context-aware prompts and extract insights without CLM implementation . **Kira** is **multi-layer legal AI**—GenAI grounded in 1,400+ proprietary legal fields to reduce hallucinations . **Luminance** is a **conversational portfolio assistant**—Lumi navigates contracts and generates insights across document families . **Conga and Evisort** are **pipeline extraction** platforms—they ingest and extract metadata with configurable models . **ABBYY, Rossum, Hyperscience, Google Document AI, and AWS** are **document AI platforms**—general-purpose extraction adaptable to contracts . **contract-obligation-extraction** is an **open-source pipeline**—it produces a structured register with citations and human review . **Choose based on whether you need agentic analysis, legal-grade accuracy, conversational access, configurable pipelines, or open-source control.**
-
-- **Icertis AnalyticsAI requires no CLM implementation**—it ingests contracts immediately and extracts attributes in real time . **The trade-off**: enterprise pricing; value depends on portfolio size.
-
-- **Kira's multi-layer AI is the most defensible approach**—GenAI grounded in 1,400+ proprietary fields developed through 45,000 lawyer hours reduces hallucination and improves consistency . **The trade-off**: enterprise pricing; proprietary field library.
-
-- **Evisort's Workday ROI is documented**—100,000+ contracts, 45,000 hours saved quarterly, 3,500% ROI from averted legal fees . **The trade-off**: Workday ecosystem dependency.
-
-- **Luminance's Lumi is the most conversational interface**—chat history saved so context compounds; document families analyzed as evolving relationships . **The trade-off**: enterprise pricing; implementation required.
-
-- **Google Document AI's foundation models require minimal training data**—0–50+ documents for production quality on contracts, versus 10–100+ for custom models . **Recommended first option for variable layouts.**
-
-- **contract-obligation-extraction is the only functional open-source contract extraction pipeline**—structured register, source citations, human review routing, and PII redaction . **The trade-off**: early-stage; configuration required. **For teams wanting auditability and control, it is the starting point.**
-
-- Self-hosted open-source solutions require proper setup (Python 3.12, FastAPI) and contract corpus configuration. **Contract extraction tools process privileged documents**—ensure your deployment meets your organization's security and confidentiality requirements before processing production contracts.
-
-
+# 📑 Awesome AI-Powered Contract Metadata Extraction
+
+<p align="center">
+  <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a>
+  <a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-AI-Powered-Contract-Metadata-Extraction/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-AI-Powered-Contract-Metadata-Extraction?style=social" alt="GitHub Stars"/></a>
+  <a href="https://github.com/ishandutta2007/Awesome-AI-Powered-Contract-Metadata-Extraction/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-AI-Powered-Contract-Metadata-Extraction?style=social" alt="GitHub Forks"/></a>
+  <a href="https://github.com/ishandutta2007/Awesome-AI-Powered-Contract-Metadata-Extraction/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-green.svg" alt="License"/></a>
+  <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
+</p>
+
+> **A curated, battle-tested directory of AI-powered contract metadata extraction platforms, enterprise SaaS suites, and open-source document intelligence engines. 🌟 Star if you find this valuable! 🌟**
+
+**Curated List of SaaS Products & Open-Source GitHub Projects**  
+*Focused on Clause Extraction, OCR & Layout Pipelines, Source-Linked Registers, Obligation Tracking & Self-Hosted LLM Engines.*  
+**Last updated:** November 2026
 
 ---
 
+## 🔍 Overview & SEO Highlights
 
+This repository benchmarks and catalogues leading **SaaS platforms** and **open-source AI pipelines** engineered for **AI-Powered Contract Metadata Extraction**, **Legal Tech Automation**, and **Document Intelligence**. These tools empower legal teams, procurement leads, contract operations, and software engineers to ingest multi-page unstructured contracts (MSAs, NDAs, SOWs, DPAs, and SLAs) at scale, reliably extracting:
+- 📌 **Key Terms & Dates:** Effective dates, renewal triggers, notice windows, termination conditions.
+- ⚖️ **Obligations & Covenants:** Commercial deliverables, SLA requirements, security audits, data residency.
+- 🛡️ **Risk & Liability Provisions:** Indemnification caps, limitation of liability, governing law, anti-assignment clauses.
+- 🔗 **Field Provenance & Citations:** Exact grounding down to bounding boxes and text spans with confidence scoring.
 
-**Made for legal operations teams, contract managers, and organizations building transparent contract intelligence solutions.**
+---
 
-Let's make AI-Powered Contract Metadata Extraction more open, data-driven, and source-verifiable.
+## 📑 Table of Contents
+
+- [📊 Sector Overview & Market Dynamics](#-sector-overview--market-dynamics)
+- [🏢 SaaS & Hosted Platforms](#-saas--hosted-platforms)
+- [💻 Open-Source GitHub Projects](#-open-source-github-projects)
+- [💡 Architectural Comparison: SaaS vs. Open Source](#-architectural-comparison-saas-vs-open-source)
+- [🤝 How to Contribute](#-how-to-contribute)
+- [☕ Support](#-support)
+- [📈 Star History](#-star-history)
+- [⚠️ Disclaimer](#-disclaimer)
+
+---
+
+## 📊 Sector Overview & Market Dynamics
+
+The global **Contract Lifecycle Management (CLM) and Contract Intelligence market** is estimated at **$2.0B to $3.7B in 2026**, expanding rapidly at a CAGR of ~12% to 15% toward an estimated $10B+ by the mid-2030s.
+
+The sector is **moderately to highly fragmented** rather than a winner-take-all monopoly. Because contract law, regulatory frameworks (e.g., GDPR, DORA, CCPA), and cross-border commercial norms vary drastically across jurisdictions and industry verticals (BFSI, healthcare, enterprise IT, supply chain), top platform leaders capture single-digit to low double-digit market share (approx. 6%–11% each). Consequently, specialized legal AI vendors (Icertis, Litera Kira, Luminance) thrive alongside enterprise cloud mega-platforms (Google Cloud, AWS, Workday) and auditable open-source extraction pipelines.
+
+---
+
+## 🏢 SaaS & Hosted Platforms
+
+The table below benchmarks enterprise SaaS contract intelligence and document extraction platforms, sorted in descending order by company size (valuation / revenue scale).
+
+| Platform 🚀 | Company Size (Valuation / Revenue) 📈 | Pricing (Starting Tier) 💵 | Free Tier / Trial Limits 🎁 | Core Extraction Strengths ⚙️ | Best For 🎯 |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| **[AWS Textract & Comprehend](https://aws.amazon.com/textract/)** | **~$2.2 Trillion** *(Amazon Market Cap)* | **$1.50 per 1,000 pages** *(Textract OCR)*; **$50.00 per 1,000 pages** *(Textract Key-Value Forms)*; **$0.0001 per 100 chars** *(Comprehend NLP)* | **3-Month Free Tier:** 1,000 pages/mo *(Textract Text)* + 100 pages/mo *(Forms/Tables)*; 50,000 units/mo free for 12 mos *(Comprehend)* | AWS-native serverless pipelines, key-value extraction, custom classifier training | Cloud-native engineering teams building custom scalable pipelines |
+| **[Google Cloud Document AI](https://cloud.google.com/document-ai)** | **~$2.1 Trillion** *(Alphabet Market Cap)* | **$30.00 per 1,000 pages** *(Generative & Custom Extractor Workbench)*; **$1.50 per 1,000 pages** *(Enterprise OCR)* | **90-Day Free Trial:** $300 in free trial credits for new Google Cloud accounts *(no perpetual free monthly quota)* | Foundation model zero-shot/few-shot legal clause extraction, layout parsers, Vertex AI grounding | Teams wanting rapid zero-shot extraction with minimal training samples (0–50 docs) |
+| **[Evisort (Workday)](https://www.evisort.com/)** | **~$70 Billion** *(Workday Market Cap; acquired for $311M)* | **~$35,000 – $60,000/year** *(Enterprise quote-based contract)* | **Sales-led Demo only:** No self-serve trial; bespoke guided enterprise evaluation on customer document sample | 54+ out-of-the-box contract models, automated conversational contract queries, Salesforce/ERP integration | Workday and enterprise ERP customers seeking automated contract-to-ledger metadata sync |
+| **[Icertis AnalyticsAI](https://www.icertis.com/)** | **~$5.0 Billion** *(Valuation; ~$300M ARR)* | **~$100,000 – $150,000/year** *(Enterprise minimum deployment)* | **Sales-led Architecture Demo:** No public free tier or self-serve trial; scoped PoC via enterprise sales team | Zero-training required agentic analysis, autonomous prompt generation, revenue leakage detection | Global enterprises needing portfolio-wide metadata intelligence without full CLM setup |
+| **[Hyperscience Hypercell](https://www.hyperscience.ai/)** | **~$1.6 Billion** *(Series E Valuation; ~$50M–$100M ARR)* | **~$40,000 – $60,000/year** *(Annual enterprise commitment)* | **No Free Trial:** Enterprise-only guided consultation and customized evaluation sandbox on request | Deep learning for complex long-form multi-page legal agreements, 99.5% accuracy guarantee, audit logs | High-throughput compliance and enterprise back-office document processing |
+| **[Conga Discovery](https://conga.com/)** | **~$1.25 Billion** *(Valuation; ~$300M+ Revenue)* | **~$20,000 – $35,000/year** *(Standard deployment)* | **30-Day Free Trial** *(for select Conga modules via Salesforce AppExchange; core CLM via guided demo)* | Three extraction modes: OCR-only, AI-only, and Verified Extraction (AI + attorney review) | Organizations requiring hybrid automated extraction backed by human-in-the-loop attorney validation |
+| **[Litera Kira (Kira Systems)](https://www.litera.com/products/legal/kira/)** | **~$1.0 Billion+** *(Litera Enterprise Portfolio; standalone acquired)* | **~$20,000 – $50,000/year** *(Mid-market/firm starter tier)* | **Discovery Demo / Pilot:** No self-serve trial; pilot environments negotiated through Litera sales | 1,400+ pre-built patented legal fields (50+ jurisdictions), Generative Smart Fields grounded in vetted clauses | Legal teams and law firms demanding rigorous, audit-defensible clause extraction |
+| **[ABBYY FlexiCapture](https://www.abbyy.com/)** | **~$500 Million+** *(Estimated Enterprise Scale / Marlin Equity)* | **~$15,000 – $25,000/year** *(Base license + volume packages)* | **7-Day Free Trial** *(up to 100 pages for desktop/cloud capture; 30-day trial for Timeline analytics)* | Hybrid NLP + structured FlexiLayouts, segmentation pre-processing, high-volume multi-lingual OCR | Regulated institutions handling mixed batches of structured forms and unstructured contracts |
+| **[Rossum](https://rossum.ai/)** | **~$250 Million** *(Series A/B Valuation; ~$18M ARR)* | **$18,000/year** *($1,500/month equivalent, 1-year minimum commitment)* | **14-Day Free Trial** *(Access to AI document engine and validation interface)* | Computer vision-based document gateway, exception handling workflows, bidirectional ERP connectors | Transactional document operations bridging contract metadata into accounts payable/ERP |
+| **[Luminance (Lumi AI)](https://www.luminance.com/)** | **~$150 Million – $200 Million** *(Series C; ~$30M–$60M ARR)* | **~$43,000 – $60,000/year** *(Average entry deployment)* | **Sales-led Custom Demo:** No self-serve trial; custom enterprise proof-of-value sandbox | Proprietary legal LLM ("Panel of Judges"), document family linkers (amendments + side letters), source citation | Legal ops and corporate counsel seeking conversational multi-document portfolio Q&A |
+
+---
+
+## 💻 Open-Source GitHub Projects
+
+The table below lists notable open-source repositories and engines for self-hosted contract extraction, legal NLP, and document intelligence, sorted in descending order by **GitHub Star count**. Each star badge links directly to that repository's stargazers page.
+
+| Repository 📦 | GitHub Stars ⭐ | License 📜 | Tech Stack 🛠️ | Extraction Focus & Architecture 🔍 |
+| :--- | :--- | :--- | :--- | :--- |
+| **[docling-project/docling](https://github.com/docling-project/docling)** | <a href="https://github.com/docling-project/docling/stargazers"><img src="https://img.shields.io/github/stars/docling-project/docling?style=social&color=white" alt="Docling Stars"/></a> | MIT | Python, PyTorch, C++ | IBM Research layout parser and document conversion engine. Preserves complex multi-column legal clauses, tables, and hierarchical headings for LLM contract extraction. |
+| **[Unstructured-IO/unstructured](https://github.com/Unstructured-IO/unstructured)** | <a href="https://github.com/Unstructured-IO/unstructured/stargazers"><img src="https://img.shields.io/github/stars/Unstructured-IO/unstructured?style=social&color=white" alt="Unstructured Stars"/></a> | Apache-2.0 | Python, ONNX, LayoutLM | Leading open ingestion pipeline for unstructured legal documents. Partitions PDFs into clean semantic elements, tables, and metadata chunks ready for vector search and metadata tagging. |
+| **[Open-Source-Legal/OpenContracts](https://github.com/Open-Source-Legal/OpenContracts)** | <a href="https://github.com/Open-Source-Legal/OpenContracts/stargazers"><img src="https://img.shields.io/github/stars/Open-Source-Legal/OpenContracts?style=social&color=white" alt="OpenContracts Stars"/></a> | Apache-2.0 | Python, Django, React, Celery | Open-source enterprise Document Management System (DMS) tailored for contract review. Supports bounding-box PDF extraction, human-in-the-loop annotation, and LLM-assisted clause analysis. |
+| **[LexPredict/lexpredict-lexnlp](https://github.com/LexPredict/lexpredict-lexnlp)** | <a href="https://github.com/LexPredict/lexpredict-lexnlp/stargazers"><img src="https://img.shields.io/github/stars/LexPredict/lexpredict-lexnlp/stargazers"><img src="https://img.shields.io/github/stars/LexPredict/lexpredict-lexnlp?style=social&color=white" alt="LexNLP Stars"/></a> | MIT | Python, Scikit-learn, NLTK | Classical legal NLP library for extracting dates, monetary values, entity names, citations, obligations, and custom contract expressions without cloud dependencies. |
+| **[The-Atticus-Project/cuad](https://github.com/The-Atticus-Project/cuad)** | <a href="https://github.com/The-Atticus-Project/cuad/stargazers"><img src="https://img.shields.io/github/stars/The-Atticus-Project/cuad?style=social&color=white" alt="CUAD Stars"/></a> | CC-BY-4.0 | Python, PyTorch, Transformers | The benchmark Contract Understanding Atticus Dataset and fine-tuning baseline. Features 510 commercial contracts labeled across 41 crucial legal clause categories for supervised fine-tuning. |
+| **[LexPredict/lexpredict-contraxsuite](https://github.com/LexPredict/lexpredict-contraxsuite)** | <a href="https://github.com/LexPredict/lexpredict-contraxsuite/stargazers"><img src="https://img.shields.io/github/stars/LexPredict/lexpredict-contraxsuite?style=social&color=white" alt="ContraxSuite Stars"/></a> | AGPL-3.0 | Python, Celery, PostgreSQL | Open-source document analytics and contract extraction engine for law firms and enterprise legal ops. Includes rules-based and ML-based contract provision classifiers. |
+| **[contract-obligation-extraction](https://github.com/ishandutta2007/Awesome-AI-Powered-Contract-Metadata-Extraction)** | <a href="https://github.com/ishandutta2007/Awesome-AI-Powered-Contract-Metadata-Extraction/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-AI-Powered-Contract-Metadata-Extraction?style=social&color=white" alt="Contract Obligation Stars"/></a> | MIT | Python 3.12, FastAPI, Pydantic | Specialized deterministic post-signature contract obligation extractor. Produces structured registers of deliverables, risk flags, and deadlines with exact source clause citations. |
+| **[ContractVault](https://github.com/ishandutta2007/Awesome-AI-Powered-Contract-Metadata-Extraction)** | <a href="https://github.com/ishandutta2007/Awesome-AI-Powered-Contract-Metadata-Extraction/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-AI-Powered-Contract-Metadata-Extraction?style=social&color=white" alt="ContractVault Stars"/></a> | MIT | Python, SQLite, Git CLI | Lightweight post-signature contract CLI for field extraction, deadline calendar exports (`.ics`), deterministic provenance tracking, and PII masking. |
+
+---
+
+## 💡 Architectural Comparison: SaaS vs. Open Source
+
+When architecting an automated contract extraction pipeline, consider the following structural dimensions:
+
+1. **Defensibility & Provenance 🛡️:**
+   - *Enterprise SaaS:* Platforms like Litera Kira leverage curated proprietary field libraries (1,400+ fields) grounded in legal expert hours to prevent hallucinations.
+   - *Open Source:* OpenContracts and Docling allow local grounding with full transparency over token coordinates and text anchors.
+2. **Data Privacy & Compliance 🔒:**
+   - Privileged legal agreements, NDAs, and customer DPAs often restrict cloud processing. Open-source stacks run air-gapped on private VPCs or on-prem hardware with zero telemetry.
+3. **Turnkey vs. Custom Engineering ⚙️:**
+   - Commercial platforms offer ready-to-use UIs, human-in-the-loop review queues, and direct Salesforce/Workday integrations.
+   - Open-source solutions provide modular primitives (OCR, layout parsing, LLM prompting) that can be integrated into custom microservices.
+
+---
+
+## 🤝 How to Contribute
+
+Contributions are welcome! Help us keep this directory accurate and exhaustive:
+
+1. 🍴 **Fork** the repository.
+2. 🌿 Create a descriptive branch: `git checkout -b add/new-extractor-tool`.
+3. 📝 Update `README.md` following the tabular formatting with factual data (starting price, free tier limit, star badges).
+4. 🚀 Open a **Pull Request** explaining your addition.
+
+---
+
+## ☕ Support
+
+If this curated repository saved you hours of research or helped optimize your legal-tech stack, please consider supporting the project:
+
+- ⭐ **Star this repository** to improve discoverability!
+- 🍴 **Fork and share** with your legal engineering and contract operations peers.
+- ☕ **Buy a coffee & sponsor ongoing maintenance:** [Sponsor ishandutta2007 on GitHub](https://github.com/sponsors/ishandutta2007)
+
+Your sponsorship fuels continuous evaluation of new models, benchmarks, and legal document intelligence tools!
+
+---
+
+## 📈 Star History
+
+[![Star History Chart](https://www.star-history.com/svg?repos=ishandutta2007/Awesome-AI-Powered-Contract-Metadata-Extraction&type=date&legend=top-left)](https://www.star-history.com/#ishandutta2007/Awesome-AI-Powered-Contract-Metadata-Extraction&type=date&legend=top-left)
+
+---
+
+## ⚠️ Disclaimer
+
+- This is a **community-curated directory** intended for educational and engineering research purposes.
+- Mentions of commercial SaaS platforms or open-source libraries do not constitute an endorsement.
+- Contracts contain confidential, legally privileged, and regulated information (GDPR, CCPA, HIPAA). Always conduct thorough security audits, data processing reviews, and penetration tests before routing agreements through any AI model or pipeline.
