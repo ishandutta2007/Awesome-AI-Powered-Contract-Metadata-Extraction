@@ -7,7 +7,7 @@
 <p align="center">
   <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a>
   <a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
-  <a href="https://github.com/ishandutta2007/Awesome-AI-Powered-Contract-Metadata-Extraction/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-AI-Powered-Contract-Metadata-Extraction?style=social" alt="GitHub Stars"/></a>
+  <a href="https://github.com/ishandutta2007/Awesome-AI-Powered-Contract-Metadata-Extraction/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-AI-Powered-Contract-Metadata-Extraction?style=social" alt="GitHub_Stars"/></a>
   <a href="https://github.com/ishandutta2007/Awesome-AI-Powered-Contract-Metadata-Extraction/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-AI-Powered-Contract-Metadata-Extraction?style=social" alt="GitHub Forks"/></a>
   <a href="https://github.com/ishandutta2007/Awesome-AI-Powered-Contract-Metadata-Extraction/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-green.svg" alt="License"/></a>
   <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
@@ -73,9 +73,9 @@ The table below benchmarks enterprise SaaS contract intelligence and document ex
 
 ## 💻 Open-Source GitHub Projects
 
-The table below lists notable open-source repositories and engines for self-hosted contract extraction, legal NLP, and document intelligence, sorted in descending order by **GitHub Star count**. Each star badge links directly to that repository's stargazers page.
+The table below lists notable open-source repositories and engines for self-hosted contract extraction, legal NLP, and document intelligence, sorted in descending order by **GitHub Stars_Count**. Each Stars_Badge links directly to that repository's stargazers page.
 
-| Repository 📦 | GitHub Stars ⭐ | License 📜 | Tech Stack 🛠️ | Extraction Focus & Architecture 🔍 |
+| Repository 📦 | GitHub_Stars ⭐ | License 📜 | Tech Stack 🛠️ | Extraction Focus & Architecture 🔍 |
 | :--- | :--- | :--- | :--- | :--- |
 | **[docling-project/docling](https://github.com/docling-project/docling)** | <a href="https://github.com/docling-project/docling/stargazers"><img src="https://img.shields.io/github/stars/docling-project/docling?style=social&color=white" alt="Docling Stars"/></a> | MIT | Python, PyTorch, C++ | IBM Research layout parser and document conversion engine. Preserves complex multi-column legal clauses, tables, and hierarchical headings for LLM contract extraction. |
 | **[Unstructured-IO/unstructured](https://github.com/Unstructured-IO/unstructured)** | <a href="https://github.com/Unstructured-IO/unstructured/stargazers"><img src="https://img.shields.io/github/stars/Unstructured-IO/unstructured?style=social&color=white" alt="Unstructured Stars"/></a> | Apache-2.0 | Python, ONNX, LayoutLM | Leading open ingestion pipeline for unstructured legal documents. Partitions PDFs into clean semantic elements, tables, and metadata chunks ready for vector search and metadata tagging. |
@@ -109,7 +109,7 @@ Contributions are welcome! Help us keep this directory accurate and exhaustive:
 
 1. 🍴 **Fork** the repository.
 2. 🌿 Create a descriptive branch: `git checkout -b add/new-extractor-tool`.
-3. 📝 Update `README.md` following the tabular formatting with factual data (starting price, free tier limit, star badges).
+3. 📝 Update `README.md` following the tabular formatting with factual data (starting price, free tier limit, Stars_Badges).
 4. 🚀 Open a **Pull Request** explaining your addition.
 
 ---
