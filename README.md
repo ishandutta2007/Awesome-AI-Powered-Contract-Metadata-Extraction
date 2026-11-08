@@ -1,4 +1,6 @@
-# Awesome-AI-Powered-Contract-Metadata-Extraction
+<p align="center">
+  <img src="assets/banner.svg" alt="Awesome AI-Powered Contract Metadata Extraction Banner" width="100%">
+</p>
 
 # Awesome-AI-Powered-Contract-Metadata-Extraction
 

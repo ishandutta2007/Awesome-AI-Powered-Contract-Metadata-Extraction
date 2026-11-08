@@ -1,0 +1,300 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 420" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradients -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#070b19" />
+      <stop offset="50%" stop-color="#0d1527" />
+      <stop offset="100%" stop-color="#050814" />
+    </linearGradient>
+
+    <linearGradient id="titleGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="50%" stop-color="#818cf8" />
+      <stop offset="100%" stop-color="#c084fc" />
+    </linearGradient>
+
+    <linearGradient id="glowGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.25" />
+      <stop offset="100%" stop-color="#38bdf8" stop-opacity="0" />
+    </linearGradient>
+
+    <linearGradient id="glowGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#818cf8" stop-opacity="0.2" />
+      <stop offset="100%" stop-color="#c084fc" stop-opacity="0" />
+    </linearGradient>
+
+    <linearGradient id="borderGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.8" />
+      <stop offset="50%" stop-color="#818cf8" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="#c084fc" stop-opacity="0.8" />
+    </linearGradient>
+
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" stop-opacity="0.65" />
+      <stop offset="100%" stop-color="#0f172a" stop-opacity="0.85" />
+    </linearGradient>
+
+    <linearGradient id="beamGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0" />
+      <stop offset="50%" stop-color="#38bdf8" stop-opacity="1" />
+      <stop offset="100%" stop-color="#818cf8" stop-opacity="0" />
+    </linearGradient>
+
+    <!-- Drop Shadows / Glow Filter -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <filter id="softGlow" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <!-- Grid Pattern -->
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#334155" stroke-width="0.75" stroke-opacity="0.25" />
+      <circle cx="40" cy="40" r="1" fill="#64748b" fill-opacity="0.3" />
+    </pattern>
+
+    <!-- Animation Keyframes -->
+    <style>
+      .orb-1 {
+        animation: floatOrb1 14s ease-in-out infinite alternate;
+      }
+      .orb-2 {
+        animation: floatOrb2 16s ease-in-out infinite alternate;
+      }
+      .pulse-pill-1 {
+        animation: pillPulse 4s ease-in-out infinite;
+      }
+      .pulse-pill-2 {
+        animation: pillPulse 4s ease-in-out 1.3s infinite;
+      }
+      .pulse-pill-3 {
+        animation: pillPulse 4s ease-in-out 2.6s infinite;
+      }
+      .scan-line {
+        animation: scanMove 6s linear infinite;
+      }
+      .particle {
+        animation: particleBlink 3s ease-in-out infinite alternate;
+      }
+      .flow-stream {
+        stroke-dasharray: 8 12;
+        animation: streamFlow 25s linear infinite;
+      }
+
+      @keyframes floatOrb1 {
+        0% { transform: translate(0px, 0px) scale(1); }
+        50% { transform: translate(60px, 20px) scale(1.15); }
+        100% { transform: translate(-30px, 40px) scale(0.95); }
+      }
+      @keyframes floatOrb2 {
+        0% { transform: translate(0px, 0px) scale(1); }
+        50% { transform: translate(-50px, -25px) scale(1.2); }
+        100% { transform: translate(40px, -15px) scale(0.9); }
+      }
+      @keyframes pillPulse {
+        0%, 100% { opacity: 0.85; transform: translateY(0); }
+        50% { opacity: 1; transform: translateY(-3px); }
+      }
+      @keyframes scanMove {
+        0% { transform: translateY(-50px); opacity: 0; }
+        15% { opacity: 0.8; }
+        85% { opacity: 0.8; }
+        100% { transform: translateY(450px); opacity: 0; }
+      }
+      @keyframes particleBlink {
+        0% { opacity: 0.2; transform: scale(0.8); }
+        50% { opacity: 0.9; transform: scale(1.3); }
+        100% { opacity: 0.3; transform: scale(0.9); }
+      }
+      @keyframes streamFlow {
+        to { stroke-dashoffset: -400; }
+      }
+    </style>
+  </defs>
+
+  <!-- Base Canvas Background -->
+  <rect width="1200" height="420" rx="16" fill="url(#bgGrad)" />
+
+  <!-- Subtle Blueprint Tech Grid Background -->
+  <rect width="1200" height="420" rx="16" fill="url(#grid)" />
+
+  <!-- DYNAMIC / ANIMATED BACKGROUND ELEMENTS -->
+  <!-- Floating Luminous Nebula Orbs -->
+  <g class="orb-1" style="transform-origin: 250px 180px;">
+    <circle cx="240" cy="160" r="180" fill="url(#glowGrad1)" filter="url(#glow)" />
+  </g>
+  <g class="orb-2" style="transform-origin: 950px 240px;">
+    <circle cx="950" cy="240" r="210" fill="url(#glowGrad2)" filter="url(#glow)" />
+  </g>
+
+  <!-- Futuristic Extraction Circuit Data Streams -->
+  <g opacity="0.35">
+    <path class="flow-stream" d="M -50 90 Q 300 160 600 80 T 1250 110" fill="none" stroke="#38bdf8" stroke-width="1.8" />
+    <path class="flow-stream" d="M -50 330 Q 350 250 700 340 T 1250 300" fill="none" stroke="#818cf8" stroke-width="1.8" />
+    <path class="flow-stream" d="M 100 -20 Q 400 210 750 180 T 1220 380" fill="none" stroke="#c084fc" stroke-width="1.2" opacity="0.6" />
+  </g>
+
+  <!-- Animated Ambient Data Sparks / Nodes in background -->
+  <circle cx="160" cy="80" r="2" fill="#38bdf8" class="particle" style="animation-delay: 0.2s;" />
+  <circle cx="280" cy="340" r="2.5" fill="#818cf8" class="particle" style="animation-delay: 1.1s;" />
+  <circle cx="890" cy="90" r="2" fill="#c084fc" class="particle" style="animation-delay: 0.7s;" />
+  <circle cx="1060" cy="320" r="3" fill="#38bdf8" class="particle" style="animation-delay: 1.8s;" />
+  <circle cx="600" cy="40" r="2" fill="#38bdf8" class="particle" style="animation-delay: 2.2s;" />
+
+  <!-- Subtle Vertical Scanning Laser Beam across canvas -->
+  <rect x="0" y="0" width="1200" height="2" fill="url(#beamGrad)" class="scan-line" opacity="0.7" />
+
+  <!-- Outer Rounded Border with Neon Gradient Stroke -->
+  <rect x="1" y="1" width="1198" height="418" rx="15" fill="none" stroke="url(#borderGrad)" stroke-width="1.75" />
+
+  <!-- FOREGROUND CONTENT: Guaranteed pristine layer ordering and crisp contrast -->
+  <g id="foreground-content">
+    
+    <!-- Top Category Badge Pill -->
+    <g transform="translate(600, 52)">
+      <!-- Badge shadow / glow backing -->
+      <rect x="-185" y="-15" width="370" height="30" rx="15" fill="#0f172a" stroke="#38bdf8" stroke-width="1.2" stroke-opacity="0.7" />
+      <circle cx="-165" cy="0" r="4.5" fill="#38bdf8">
+        <animate attributeName="opacity" values="1;0.3;1" dur="2s" repeatCount="indefinite" />
+      </circle>
+      <text x="-150" y="4.5" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="700" fill="#93c5fd" letter-spacing="1.5">
+        CURATED DIRECTORY &amp; BENCHMARKS
+      </text>
+      <!-- Small icon right -->
+      <path d="M 155 -4 L 162 0 L 155 4" fill="none" stroke="#38bdf8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+    </g>
+
+    <!-- Main Title (Contract Metadata Extraction) -->
+    <text x="600" y="128" 
+          font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Inter', Helvetica, Arial, sans-serif" 
+          font-size="44" 
+          font-weight="900" 
+          letter-spacing="-0.8"
+          text-anchor="middle" 
+          fill="url(#titleGrad)"
+          filter="url(#softGlow)">
+      AI-Powered Contract Metadata Extraction
+    </text>
+
+    <!-- Subtitle: Crisp High-Contrast Explainer -->
+    <text x="600" y="168" 
+          font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" 
+          font-size="16.5" 
+          font-weight="400" 
+          letter-spacing="0.2"
+          text-anchor="middle" 
+          fill="#cbd5e1">
+      Clause Extraction • OCR &amp; Vision Pipelines • Post-Signature Registers • Self-Hosted LLM Engines
+    </text>
+
+    <!-- Dynamic Interactive Feature Showcase Cards (Pills with subtle float animation) -->
+    <g id="feature-cards" transform="translate(600, 246)">
+
+      <!-- Card 1: Enterprise SaaS -->
+      <g class="pulse-pill-1" transform="translate(-370, 0)">
+        <rect x="-140" y="-38" width="280" height="76" rx="12" fill="url(#cardGrad)" stroke="#38bdf8" stroke-width="1.2" stroke-opacity="0.5" />
+        <!-- Icon: Shield / Cloud SaaS -->
+        <g transform="translate(-112, -2)">
+          <circle cx="0" cy="0" r="18" fill="#0284c7" fill-opacity="0.2" />
+          <path d="M -8 -3 L 0 -9 L 8 -3 L 8 4 Q 8 9 0 12 Q -8 9 -8 4 Z" fill="none" stroke="#38bdf8" stroke-width="1.7" stroke-linejoin="round" />
+        </g>
+        <!-- Card Text -->
+        <text x="-80" y="-8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14.5" font-weight="700" fill="#f8fafc">
+          Enterprise SaaS
+        </text>
+        <text x="-80" y="14" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11.5" font-weight="400" fill="#94a3b8">
+          Kira • Icertis • Evisort • Luminance
+        </text>
+      </g>
+
+      <!-- Card 2: Open Source Engines -->
+      <g class="pulse-pill-2" transform="translate(0, 0)">
+        <rect x="-140" y="-38" width="280" height="76" rx="12" fill="url(#cardGrad)" stroke="#818cf8" stroke-width="1.2" stroke-opacity="0.6" />
+        <!-- Icon: Open Source Terminal / Code -->
+        <g transform="translate(-112, -2)">
+          <circle cx="0" cy="0" r="18" fill="#6366f1" fill-opacity="0.2" />
+          <path d="M -6 -5 L -1 0 L -6 5 M 2 5 L 8 5" fill="none" stroke="#a5b4fc" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+        </g>
+        <!-- Card Text -->
+        <text x="-80" y="-8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14.5" font-weight="700" fill="#f8fafc">
+          Open-Source Engines
+        </text>
+        <text x="-80" y="14" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11.5" font-weight="400" fill="#94a3b8">
+          Obligation Extractors • ContractVault
+        </text>
+      </g>
+
+      <!-- Card 3: Deep Extraction Tech -->
+      <g class="pulse-pill-3" transform="translate(370, 0)">
+        <rect x="-140" y="-38" width="280" height="76" rx="12" fill="url(#cardGrad)" stroke="#c084fc" stroke-width="1.2" stroke-opacity="0.5" />
+        <!-- Icon: AI Neural Document -->
+        <g transform="translate(-112, -2)">
+          <circle cx="0" cy="0" r="18" fill="#9333ea" fill-opacity="0.2" />
+          <rect x="-6" y="-8" width="12" height="16" rx="2" fill="none" stroke="#d8b4fe" stroke-width="1.6" />
+          <line x1="-3" y1="-3" x2="3" y2="-3" stroke="#d8b4fe" stroke-width="1.4" stroke-linecap="round" />
+          <line x1="-3" y1="1" x2="3" y2="1" stroke="#d8b4fe" stroke-width="1.4" stroke-linecap="round" />
+          <line x1="-3" y1="5" x2="1" y2="5" stroke="#d8b4fe" stroke-width="1.4" stroke-linecap="round" />
+        </g>
+        <!-- Card Text -->
+        <text x="-80" y="-8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14.5" font-weight="700" fill="#f8fafc">
+          Document Intelligence
+        </text>
+        <text x="-80" y="14" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11.5" font-weight="400" fill="#94a3b8">
+          LayoutLM • OCR • Provenance Tracking
+        </text>
+      </g>
+
+    </g>
+
+    <!-- Bottom Feature Tag Badges -->
+    <g transform="translate(600, 345)" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11.5" font-weight="500">
+      
+      <!-- Tag 1 -->
+      <g transform="translate(-290, 0)">
+        <rect x="-65" y="-13" width="130" height="26" rx="13" fill="#1e293b" fill-opacity="0.65" stroke="#475569" stroke-width="0.8" />
+        <text x="0" y="4" text-anchor="middle" fill="#94a3b8">⚡ 1,400+ Fields</text>
+      </g>
+
+      <!-- Tag 2 -->
+      <g transform="translate(-145, 0)">
+        <rect x="-65" y="-13" width="130" height="26" rx="13" fill="#1e293b" fill-opacity="0.65" stroke="#475569" stroke-width="0.8" />
+        <text x="0" y="4" text-anchor="middle" fill="#94a3b8">📄 Source Citations</text>
+      </g>
+
+      <!-- Tag 3 -->
+      <g transform="translate(0, 0)">
+        <rect x="-65" y="-13" width="130" height="26" rx="13" fill="#1e293b" fill-opacity="0.65" stroke="#475569" stroke-width="0.8" />
+        <text x="0" y="4" text-anchor="middle" fill="#94a3b8">🔒 Data Sovereignty</text>
+      </g>
+
+      <!-- Tag 4 -->
+      <g transform="translate(145, 0)">
+        <rect x="-65" y="-13" width="130" height="26" rx="13" fill="#1e293b" fill-opacity="0.65" stroke="#475569" stroke-width="0.8" />
+        <text x="0" y="4" text-anchor="middle" fill="#94a3b8">🤖 Agentic Discovery</text>
+      </g>
+
+      <!-- Tag 5 -->
+      <g transform="translate(290, 0)">
+        <rect x="-65" y="-13" width="130" height="26" rx="13" fill="#1e293b" fill-opacity="0.65" stroke="#475569" stroke-width="0.8" />
+        <text x="0" y="4" text-anchor="middle" fill="#94a3b8">⚖️ Legal Operations</text>
+      </g>
+
+    </g>
+
+    <!-- Bottom Tiny Metadata / Community Indicator -->
+    <text x="600" y="392" 
+          font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" 
+          font-size="11" 
+          font-weight="400" 
+          letter-spacing="1" 
+          text-anchor="middle" 
+          fill="#64748b">
+      OPEN-SOURCE &amp; SAAS DIRECTORY • UPDATED REGULARLY
+    </text>
+
+  </g>
+</svg>
